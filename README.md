@@ -1,6 +1,10 @@
 # HashiCorp Nomad Cluster PoC
 Nomad is a highly available, distributed, data-center aware cluster and application scheduler designed to support the modern datacenter with support for long-running services, batch jobs, and much more.
 
+In this proof of concept, the Consul cluster contains a single Consul server, and the Nomad Server cluster contains a single Nomad server. All Nomad clients/servers are running the Consul agent in client mode. Additionally all Nomad clients have docker installed.
+
+![](/img/poc.png)
+
 <br>
 
 # Prerequisites
