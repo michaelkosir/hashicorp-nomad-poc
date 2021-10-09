@@ -30,7 +30,7 @@ $ multipass launch -n worker-3 --cloud-init cloud-configs/nomad-client.yml
 - Hello World
 
 
-### See Changes to Consul and Nomad UI
+### View Changes in Consul and Nomad UI
 - http://consul.mshome.net:8500/
 - http://nomad.mshome.net:4646/
 
