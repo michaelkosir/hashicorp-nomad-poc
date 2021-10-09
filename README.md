@@ -1,7 +1,11 @@
 # HashiCorp Nomad Cluster PoC
 Nomad is a highly available, distributed, data-center aware cluster and application scheduler designed to support the modern datacenter with support for long-running services, batch jobs, and much more.
 
-In this proof of concept, the Consul cluster contains a single Consul server, and the Nomad Server cluster contains a single Nomad server. All Nomad clients/servers are running the Consul agent in client mode. Additionally all Nomad clients have docker installed.
+In this proof of concept, the Consul cluster contains a single Consul server, and the Nomad cluster contains a single Nomad server. All Nomad clients/servers are running the Consul agent in client mode. Additionally all Nomad clients have docker installed.
+
+<p align="center">
+  <i>** Development purposes only. Not meant for production use. **</i>
+</p>
 
 ![](/img/poc.png)
 
@@ -10,7 +14,12 @@ In this proof of concept, the Consul cluster contains a single Consul server, an
 # Prerequisites
 - [Multipass](https://multipass.run/) orchestrates virtual Ubuntu instances
 
-<br>
+# Documentation
+- https://www.nomadproject.io/docs
+- https://www.consul.io/docs
+- https://docs.docker.com/
+- https://fabiolb.net/
+- https://cloudinit.readthedocs.io/en/latest/
 
 # Usage
 
@@ -25,30 +34,36 @@ $ multipass launch -n worker-3 --cloud-init cloud-configs/nomad-client.yml
 ```
 
 ### Browse UIs
-- http://consul.mshome.net:8500/
-- http://nomad.mshome.net:4646/
-
+```
+http://consul.mshome.net:8500/
+http://nomad.mshome.net:4646/
+```
 
 ### Add Jobs in Nomad UI
-- Fabio
-- Hello World
-
+```
+Fabio
+Hello World
+```
 
 ### View Changes in Consul and Nomad UI
-- http://consul.mshome.net:8500/
-- http://nomad.mshome.net:4646/
-
+```
+http://consul.mshome.net:8500/
+http://nomad.mshome.net:4646/
+```
 
 ### Fabio UI
-- http://\<worker\>.mshome.net:9998/
-- http://worker-2.mshome.net:9998/
 
+```
+http://<worker>.mshome.net:9998/
+http://worker-2.mshome.net:9998/
+```
 
 ### Hello World (via Fabio)
-- http://worker-1.mshome.net:9999/helloworld
-- http://worker-2.mshome.net:9999/helloworld
-- http://worker-3.mshome.net:9999/helloworld
-
+```
+http://worker-1.mshome.net:9999/helloworld
+http://worker-2.mshome.net:9999/helloworld
+http://worker-3.mshome.net:9999/helloworld
+```
 
 ### Stop VMs
 ```
