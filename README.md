@@ -20,6 +20,7 @@ In this proof of concept, the Consul cluster contains a single Consul server, an
 - https://docs.docker.com/
 - https://fabiolb.net/
 - https://cloudinit.readthedocs.io/en/latest/
+- https://multipass.run/docs
 
 # Usage
 
