@@ -71,7 +71,7 @@ write_files:
 
 runcmd:
   - "chown consul:consul /opt/consul"
-  - "chown root:root //etc/consul.d"
+  - "chown root:root /etc/consul.d"
   - "chown root:consul /etc/consul.d/consul.hcl"
   - "chmod 640 /etc/consul.d/consul.hcl"
   
